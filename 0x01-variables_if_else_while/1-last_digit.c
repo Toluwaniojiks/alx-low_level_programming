@@ -13,17 +13,17 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n == 96)
+	if (n == 98)
 	{
-		printf("Last digit of 96 is 6 and is greater than 5\n");
+		printf("Last digit of 98 is 8 and is greater than 5\n");
 	}
-	else if (n == 90)
+	else if (n == 980)
 	{
 		printf("Last digit of 90 is 0 and is 0\n");
 	}
-	else if (n == 95)
+	else if (n == -98)
 	{
-		printf("Last digit of 95 is 5 and is less than 6 and not 0\n");
+		printf("Last digit of -98 is 8 and is less than 6 and not 0\n");
 	}
 	return (0);
 }
