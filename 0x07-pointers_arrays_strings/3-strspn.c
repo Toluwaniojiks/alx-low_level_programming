@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*(s + a) == *(accept + b))
 			{
-				bool == 0;
+				bool = 0;
 				break;
 			}
 		}
