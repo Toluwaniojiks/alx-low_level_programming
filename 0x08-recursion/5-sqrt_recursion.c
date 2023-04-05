@@ -9,8 +9,9 @@
  */
 int square_root(int n, int i)
 {
-	if (i % (n / i) == 0 && i * (n / i) == n)
+	if (i % (n / i) == 0)
 	{
+		if (i * (n / i) == n)
 		return (i);
 	}
 	else
