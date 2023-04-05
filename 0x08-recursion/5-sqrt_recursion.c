@@ -12,11 +12,9 @@ int square_root(int n, int i)
 	if (i % (n / i) == 0)
 	{
 		if (i * (n / i) == n)
-		return (i);
-	}
-	else
-	{
-		return (-1);
+			return (i);
+		else
+			return (-1);
 	}
 	return (0 + square_root(n, i + 1));
 }
