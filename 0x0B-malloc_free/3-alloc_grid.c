@@ -1,4 +1,4 @@
-#include "maih"
+#include "maih.h"
 #include <stdlib.h>
 
 /**
