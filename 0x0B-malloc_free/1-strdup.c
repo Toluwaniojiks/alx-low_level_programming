@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 /**
- * _strdup - function that returns a pointer to a newly allocated space in memory,
+ * _strdup - function that returns a pointer to a newly allocated
+ * space in memory,
  * which contains a copy of the string given as a parameter
- * @str - string to be copied
+ * @str: - string to be copied
  * Return: A pointer on success and NULL if no mermory is allocated
  */
 char *_strdup(char *str)
@@ -24,6 +25,6 @@ char *_strdup(char *str)
 	{
 		ptr[i] = str[i];
 	}
-	ptr[size] = \'0';
+	ptr[size] = '\0';
 	return (ptr);
 }
