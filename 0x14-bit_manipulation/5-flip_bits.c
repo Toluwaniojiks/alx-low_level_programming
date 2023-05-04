@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * flip_bits -function that returns the number of
@@ -10,12 +11,15 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int n_bit;
+	unsigned int i, n_bit = 0;
+	unsigned long int j = sizeof(unsigned long int) * 8;
 
-	for (n_bit = 0; n || m; n >>= 1, m >> 1)
+	for (i = 0; i < j; i++)
 	{
 		if ((n & 1) != (m & 1))
-			n_bit++;
+			n_bit += 1;
+		n = n >> 1;
+		m = m >> 1;
 	}
 	return (n_bit);
 }
