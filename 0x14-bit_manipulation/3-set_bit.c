@@ -5,7 +5,7 @@
  * set_bit - function that sets the value of a bit to
  * 1 at a given index
  * @n: bit value(1)
- * @index: position of the bit 
+ * @index: position of the bit
  *
  * Return:1 if it worked, or -1 if an error occurred
  */
